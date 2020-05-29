@@ -7,34 +7,29 @@ public class funcionario {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner (System.in);
 
-		System.out.printf("Digitar outro (S/N)? ");
-		digitar = sc.next().charAt(0);
 
-		while (digitar == 's' || digitar == 'S') {
-			System.out.printf("Nome: ");
-			nome = sc.next();
-
-			System.out.printf("Horas trabalhadas: ");
-			horastrabalhadas = sc.nextDouble();
-
-			while (horastrabalhadas < 0) {
-				System.out.printf("Horas trabalhadas: ");
-				horastrabalhadas = sc.nextDouble();
-			}
-
-			System.out.printf("Valor por hora: ");
-			valorporhora = sc.nextDouble();
-
-			while (valorporhora < 0) {
-				System.out.printf("Valor por hora: ");
-				valorporhora = sc.nextDouble();
-			}
-			System.out.printf("Digitar outro (S/N)? ");
-			digitar = sc.next().charAt(0);
-
-		}
-	
+		//MENU//
 		
+		System.out.println("");
+		System.out.println("MENU");
+		System.out.println("1 - Total de horas trabalhadas");
+		System.out.println("2 - Custo total");
+		System.out.println("3 - Nome da pessoa que ganhou mais");
+		System.out.println("4 - Sair");
+		System.out.println("Digite uma opção: ");
+
+		int opcao;
+		opcao = sc.nextInt();
+
+		while (opcao != 4) {
+			System.out.println("MENU");
+			System.out.println("1 - Total de horas trabalhadas");
+			System.out.println("2 - Custo total");
+			System.out.println("3 - Nome da pessoa que ganhou mais");
+			System.out.println("4 - Sair");
+			System.out.println("Digite uma opção: ");
+			opcao = sc.nextInt();
+		}
 		
 		
 		sc.close();
